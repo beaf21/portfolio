@@ -3,29 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About Me - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <a href="index.html" class="site-title">Your Name</a>
+        <div class="nav-links">
+            <a href="about.html" class="active">About Me</a>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
 
-    <section>
-        <h2>Who Am I?</h2>
-        <p>I am a [Your Profession] with a passion for [Your Interests].</p>
-    </section>
+    <main class="main-content">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p class="intro">Brief introduction about yourself and your work.</p>
+                    <p class="details">More detailed information about your experience, skills, and interests.</p>
+                    
+                    <div class="skills-section">
+                        <h2>Skills</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Design</h3>
+                                <ul>
+                                    <li>UI/UX Design</li>
+                                    <li>Graphic Design</li>
+                                    <li>Typography</li>
+                                </ul>
+                            </div>
+                            <!-- Add more skill categories -->
+                        </div>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>Resume</h2>
+                        <a href="path/to/resume.pdf" class="resume-button" download>Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
-    </footer>
+        <!-- Contact Form -->
+        <div class="contact-section">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

@@ -1,66 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Your Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="site-title">Your Name</a>
+        <div class="nav-links">
+            <a href="about.html">About Me</a>
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Category Filters -->
+        <nav class="portfolio-nav">
+            <a href="#web">Web</a>
+            <a href="#print">Print</a>
+            <a href="#illustration">Illustration</a>
+            <a href="#all" class="active">All</a>
+            <a href="#photography">Photography</a>
+            <a href="#graphics">Graphics</a>
+            <a href="#uxui">UX/UI</a>
         </nav>
-    </header>
 
-    <section class="hero">
-        <img src="images/profile.jpg" alt="Profile Picture">
-        <h2>Hi, I'm [Your Name]</h2>
-        <p>I'm a passionate [Your Profession]. Welcome to my portfolio!</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
-    </footer>
+        <!-- Project Grid -->
+        <div class="portfolio-grid">
+            <!-- Example Project Item -->
+            <a href="projects/project1.html" class="portfolio-item">
+                <div class="portfolio-image">
+                    <img src="images/project1.jpg" alt="Project 1">
+                </div>
+                <div class="portfolio-info">
+                    <h2>Project Title</h2>
+                    <div class="tags">
+                        <span class="tag">Web</span>
+                        <span class="tag">UX/UI</span>
+                    </div>
+                    <p class="project-brief">Brief description of the project goes here.</p>
+                </div>
+            </a>
+            <!-- Add more portfolio items here -->
+        </div>
+    </main>
+    <script src="js/filter.js"></script>
 </body>
+
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>About Me</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <h2>Who Am I?</h2>
-        <p>I am a [Your Profession] with a passion for [Your Interests].</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
-
